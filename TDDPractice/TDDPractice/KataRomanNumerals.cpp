@@ -66,5 +66,6 @@ TEST_CASE("Factorials are computed", "[factorial]") {
 	REQUIRE(RomanNumerals(40) == "XL");
 	REQUIRE(RomanNumerals(45) == "XLV");
 	REQUIRE(RomanNumerals(50) == "L");
+	REQUIRE(RomanNumerals(59) == "LIX");
 
 }
