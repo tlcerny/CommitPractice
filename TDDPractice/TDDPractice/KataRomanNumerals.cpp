@@ -7,28 +7,28 @@ using std::string;
 
 string RomanNumerals(int number) {
 
-	string rNumber;
+	string romanNumber;
 
 	while (number>0){
 
 		if (number >=5){
 			number -= 5;
-			rNumber += "V";
+			romanNumber += "V";
 		}
 
 		else if (number == 4){
-			rNumber+= "IV";
+			romanNumber+= "IV";
 			number -= 4;
 		}
 
 		else if (number>=1){
 			number -= 1;
-			rNumber += "I";
+			romanNumber += "I";
 		}
 		
 		
 	}
-	return rNumber;
+	return romanNumber;
 	
 }
 
@@ -38,4 +38,5 @@ TEST_CASE("Factorials are computed", "[factorial]") {
 	REQUIRE(RomanNumerals(4) == "IV");
 	REQUIRE(RomanNumerals(5) == "V");
 	REQUIRE(RomanNumerals(6) == "VI");
+	REQUIRE(RomanNumerals(8) == "VIII");
 }
