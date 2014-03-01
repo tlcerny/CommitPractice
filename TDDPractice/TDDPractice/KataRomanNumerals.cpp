@@ -11,21 +11,24 @@ string RomanNumerals(int number) {
 
 	while (number>0){
 
-		if (number == 1){
-			return "I";
-		}
-		else if (number == 2){
-			return "II";
-		}
-		else if (number == 4){
-			return "IV";
-
-		}
-		else if (number == 5){
+		if (number >=5){
 			number -= 5;
-			rNumber+="V";
+			rNumber += "V";
 		}
+
+		else if (number == 4){
+			rNumber+= "IV";
+			number -= 4;
+		}
+
+		else if (number>=1){
+			number -= 1;
+			rNumber += "I";
+		}
+		
+		
 	}
+	return rNumber;
 	
 }
 
