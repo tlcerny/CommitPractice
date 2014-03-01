@@ -16,4 +16,5 @@ string RomanNumerals(int number) {
 TEST_CASE("Factorials are computed", "[factorial]") {
 	REQUIRE(RomanNumerals(1) == "I");
 	REQUIRE(RomanNumerals(2) == "II");
+	REQUIRE(RomanNumerals(2) == "IV");
 }
