@@ -11,7 +11,12 @@ string RomanNumerals(int number) {
 
 	while (number>0){
 
-		if (number >= 10){
+		if (number == 40){
+			romanNumber += "IL";
+			number -= 40;
+		}
+
+		else if (number >= 10){
 			number -= 10;
 			romanNumber += "X";
 		}
