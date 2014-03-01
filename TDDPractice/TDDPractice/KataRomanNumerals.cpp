@@ -6,7 +6,11 @@ using std::string;
 
 
 string RomanNumerals(int number) {
-	return "I";
+	if (number == 1){
+		return "I";
+	}
+	else if(number ==2)
+		return "II";
 }
 
 TEST_CASE("Factorials are computed", "[factorial]") {
