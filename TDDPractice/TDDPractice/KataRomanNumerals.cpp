@@ -9,12 +9,17 @@ string RomanNumerals(int number) {
 	if (number == 1){
 		return "I";
 	}
-	else if(number ==2)
+	else if (number == 2){
 		return "II";
+	}
+	else if (number == 4){
+		return "IV";
+
+	}
 }
 
 TEST_CASE("Factorials are computed", "[factorial]") {
 	REQUIRE(RomanNumerals(1) == "I");
 	REQUIRE(RomanNumerals(2) == "II");
-	REQUIRE(RomanNumerals(2) == "IV");
+	REQUIRE(RomanNumerals(4) == "IV");
 }
