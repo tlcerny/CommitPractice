@@ -12,7 +12,7 @@ string RomanNumerals(int number) {
 	while (number>0){
 
 		if (number >= 40){
-			romanNumber += "IL";
+			romanNumber += "XL";
 			number -= 40;
 		}
 
@@ -58,7 +58,8 @@ TEST_CASE("Factorials are computed", "[factorial]") {
 	REQUIRE(RomanNumerals(10) == "X");
 	REQUIRE(RomanNumerals(11) == "XI");
 	REQUIRE(RomanNumerals(14) == "XIV");
-	REQUIRE(RomanNumerals(40) == "IL");
-	REQUIRE(RomanNumerals(45) == "ILV");
+	REQUIRE(RomanNumerals(40) == "XL");
+	REQUIRE(RomanNumerals(45) == "XLV");
+	REQUIRE(RomanNumerals(50) == "L");
 
 }
