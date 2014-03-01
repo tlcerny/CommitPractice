@@ -10,7 +10,13 @@ string RomanNumerals(int number) {
 	string romanNumber;
 
 	while (number>0){
-		if (number == 9){
+
+		if (number >= 10){
+			number -= 10;
+			romanNumber += "X";
+		}
+
+		else if (number == 9){
 			romanNumber += "IX";
 			number -= 9;
 		}
